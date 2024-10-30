@@ -1,12 +1,6 @@
 <?php
 const TITLE = "Aprendiendo PHP";
 
-$pages = scandir("pages/");
-
-$pages = array_filter($pages, function ($file) {
-  return strpos($file, ".php") !== false;
-});
-
 $pages = [
   "introducción" => "introduction.php",
   "instalación" => "installation.php",
