@@ -7,8 +7,6 @@ $pages = [
   "sintaxis" => "syntax.php",
 ];
 
-
-
 ?>
 
 <head>
