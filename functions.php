@@ -29,6 +29,19 @@ function get_content(string $slug)
   require "pages/content/$section.html";
 }
 
+function exists_section(string $section): bool
+{
+  global $pages;
+
+  foreach ($pages as $page) {
+    if ($page["slug"] == $section) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 function get_next_and_prev(string $section)
 {
   global $pages;

@@ -1,7 +1,7 @@
 <?php
 
-require_once "constants/pages.php";
 require_once "functions.php";
+require_once "constants/pages.php";
 
 ?>
 
@@ -12,38 +12,17 @@ require_once "functions.php";
 <section class="banner pico-background-azure-800">
   <img width="250" src="./img/php-logo.svg" alt="">
   <p>
-    En esta página podrás aprender PHP desde cero.
+    ¿Quieres aprender PHP desde cero? <br />
+    Estás en el lugar correcto 💪🏽
   </p>
 
   <a href="pages/introduction">
     <button>
-      Empezar
+      Empieza aqui
     </button>
   </a>
 </section>
 
 <main class="container">
-  <section>
-    <h2>
-      Secciones disponibles
-    </h2>
-
-    <aside>
-      <?php foreach ($pages as $page) : ?>
-        <article>
-          <h3 class="uppercase">
-            <?= $page["title"] ?>
-          </h3>
-          <p>
-            <?= $page["description"] ?>
-          </p>
-          <a href="pages/<?= $page["url"] ?>">
-            <button>
-              Ver sección
-            </button>
-          </a>
-        </article>
-      <?php endforeach; ?>
-    </aside>
-  </section>
+  <?php render_template("sections", ["pages" => $pages]) ?>
 </main>
