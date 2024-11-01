@@ -10,6 +10,25 @@ function render_template(string $template, array $data = [])
   require "templates/$template.php";
 }
 
+function get_content(string $slug)
+{
+  global $pages;
+
+  $section = "";
+
+  foreach ($pages as $page) {
+    if ($page["slug"] == $slug) {
+      $section = $page["url"];
+    }
+  }
+
+  if (empty($section)) {
+    return "404";
+  }
+
+  require "pages/content/$section.html";
+}
+
 function get_next_and_prev(string $section)
 {
   global $pages;
@@ -21,7 +40,7 @@ function get_next_and_prev(string $section)
     var_dump($key);
     if ($page["slug"] == $section) {
       $next = isset($pages[$key + 1]) ? $pages[$key + 1]["url"] : null;
-      $prev = isset($pages[$key - 1]) ? $pages[$key - 1] : null;
+      $prev = isset($pages[$key - 1]) ? $pages[$key - 1]["url"] : null;
     }
   }
 

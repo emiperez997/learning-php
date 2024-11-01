@@ -62,3 +62,32 @@ Zend Engine v4.2.24, Copyright (c) Zend Technologies
 | **Especiales**     |                                                                                               |                                         |
 | `resource`         | Hace referencia a recursos externos como conexiones a bases de datos o archivos abiertos.     | `$archivo = fopen("archivo.txt", "r");` |
 | `null`             | Representa una variable sin valor.                                                            | `$variable = null;`                     |
+
+# Roadmap hacia Laravel
+
+**Desarrollo Web**
+
+- HTML
+- CSS
+- JavaScript
+- Git y GitHub
+- Práctica: Sitio web
+
+**PHP**
+
+- Conceptos básicos
+- POO
+- MVC
+- Práctica: Primer proyecto
+- Autenticación y autorización
+- Bases de Datos y MySQL
+- Composer
+
+**Laravel**
+
+- Instalación
+- Primer aplicación
+- CRUD con Eloquent
+- Sitio web con Laravel
+- API
+- Implementa Frontend

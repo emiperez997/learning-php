@@ -36,3 +36,9 @@ li div {
   flex-direction: column;
   gap: 5px;
 }
+
+.next-prev {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
