@@ -12,11 +12,10 @@ require_once "functions.php";
 <section class="banner pico-background-azure-800">
   <img width="250" src="./img/php-logo.svg" alt="">
   <p>
-    En esta pagina aprenderas los conceptos de PHP <br />
-    Desde lo basico hasta donde lleguemos.
+    En esta página podrás aprender PHP desde cero.
   </p>
 
-  <a href="pages/introduction.php">
+  <a href="pages/introduction">
     <button>
       Empezar
     </button>

@@ -13,9 +13,12 @@ $next_prev = get_next_and_prev($section);
 <?php render_template("navbar"); ?>
 
 <main class="container">
-  <?php echo get_content($section); ?>
+  <?php get_content($section); ?>
+
+  <hr>
+  <p>
+    Si te sirvió este sitio, puedes apoyarme recomendando el proyecto en GitHub.
+  </p>
 </main>
 
-<footer class="container">
-  <?php render_template("next_prev", ["next" => $next_prev["next"], "prev" => $next_prev["prev"]]); ?>
-</footer>
+<?php render_template("next_prev", ["next" => $next_prev["next"], "prev" => $next_prev["prev"]]); ?>

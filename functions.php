@@ -37,7 +37,6 @@ function get_next_and_prev(string $section)
   $prev = null;
 
   foreach ($pages as $key => $page) {
-    var_dump($key);
     if ($page["slug"] == $section) {
       $next = isset($pages[$key + 1]) ? $pages[$key + 1]["url"] : null;
       $prev = isset($pages[$key - 1]) ? $pages[$key - 1]["url"] : null;
