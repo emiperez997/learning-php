@@ -12,8 +12,6 @@ Este repositorio tiene como fin aprender PHP desde cero. Es una guía desde lo b
 
 A continuación voy a detallar las herramientas que utilizaré durante la creación de este material. No es necesario que utilices lo mismo que yo, pero si quieres puedes hacerlo.
 
-**Editor de Código**: IDX de Google
-
 **Extensiones**:
 
 - Vim
