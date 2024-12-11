@@ -1,7 +1,7 @@
 <?php
 
-require_once "../functions.php";
-require_once "../constants/pages.php";
+require_once "functions.php";
+require_once "constants/pages.php";
 
 $section = explode("/", $_SERVER["REQUEST_URI"]);
 
